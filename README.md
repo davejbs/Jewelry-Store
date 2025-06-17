@@ -1,0 +1,1 @@
+# skeleton-jewelry-responsive-test
