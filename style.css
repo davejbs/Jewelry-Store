@@ -1,0 +1,73 @@
+html{
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.menu{
+    height: 100px;
+    width: 100%;
+    
+}
+
+
+#logo{
+   border: solid black;
+    margin-left: 0.25%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.menu-left-options{
+    float: right;
+    margin-top: 2em;
+}
+
+.menu-options{
+    height: 4em;
+    width: 60%;
+    margin: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+#main-picture{
+    height: 450px;
+    width: 800px;
+    position: relative;
+    left: 29%;
+}
+
+.card{
+    margin-left: 2rem;
+    height: 600px;
+    width: 800px;
+}
+.tile-image{
+    height: 600px;
+    width: 600px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.left {
+    float: left;
+}
+
+.right{
+    float: right;
+}
+footer{
+    clear:both;
+    margin-top: 5rem;
+    text-align: center;
+}
