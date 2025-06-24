@@ -47,17 +47,28 @@ h2{
 
 }
 .cards{
-    height: 2rem;
-    max-width: 600px;
     display: flex;
-    justify-content: space-evenly;
-    gap: 15rem;
+    justify-content: space-between;
+    
 }
 
-.tile-image{
-    height: 2rem;
+.card{
     
-    float: left;    
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+
+}
+.tile-image1{
+    height: 40rem;    
+    float: left;
+    padding: 1rem;
+    width: 30rem;   
+}
+.tile-image2{
+    height: 40rem;    
+    float: left;
+    padding: 1rem;
+    width: 35rem;   
 }
 
 @media (max-width:1250px){
@@ -74,6 +85,35 @@ h2{
         width: 80%;
         margin-top: 0rem;
     }
+    .cards{
+        flex-direction: column;
+        height: auto;
+    }
+    .card{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .tile-image1{
+        object-fit: contain;
+        width: 80%;
+        margin: auto;
+        margin-left:5rem ;
+        height: auto;
+        flex: none;
+    }
+    .tile-image2{
+        object-fit: contain;
+        width: 80%;
+        margin: auto;
+        margin-left:5rem ;
+        height: auto;
+        flex: none;
+    }    
+
 }
 
 
@@ -85,12 +125,6 @@ h2{
 
 
 
-.tile-image{
-    height: 600px;
-    width: 600px;
-    float: left;
-    margin-right: 1rem;
-}
 
 
 footer{
@@ -99,75 +133,3 @@ footer{
     text-align: center;
 }
 
-@media (max-width:412px) and (max-width:717px){
-    p{
-        font-size: 0.5rem; text-align: center;
-        margin-bottom:30px;
-    }
-
-    #logo{
-        text-align: center;
-        border: solid black;
-        margin: auto;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        display: block;
-    }
-    .menu{
-        margin: auto;
-    }
-    .menu-options{
-    display: inline;
-    height: 1em;
-    width: 15%;
-    margin: 0.15rem;
-}
-
-.menu-left-options{
-    margin-top: 2em;
-}
-h1{
-    position: relative;
-    top: 0.5rem;
-    font-size: 1rem;
-}
-h2{
-    font-size: 1.75rem;
-}
-
-.card{
-    display: inline;
-    margin-top: 20px;
-    margin-bottom: 3rem;
-    text-align: justify;
-    height: 300px;
-    width: 250px;
-    margin-top: 1rem;
-}
-
-.card img { 
-    margin-bottom: 15px;
-    width: 300px;
-    display: inline;
-    object-fit: cover;}
-    
-
-.tile-image{
-    margin: auto;
-    height: 200px;
-    width: 100%;
-    display: block;
-    position: relative;
-    left: 1.5rem;
-}
-
-.right, .left{
-    float: none;
-}
-
-
-footer{
-    clear: both;
-}
-}
