@@ -95,13 +95,13 @@ h2{
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     }
 
     .tile-image1{
         object-fit: contain;
         width: 80%;
         margin: auto;
-        margin-left:5rem ;
         height: auto;
         flex: none;
     }
@@ -109,7 +109,6 @@ h2{
         object-fit: contain;
         width: 80%;
         margin: auto;
-        margin-left:5rem ;
         height: auto;
         flex: none;
     }    
