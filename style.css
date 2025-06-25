@@ -79,10 +79,7 @@ h1{
         font-size:1.5rem;
     }
     #valeurs-text{
-        margin-top: -3rem;
-        margin-bottom: -3rem;
-        color: #CFB53B;
-        
+        color: #CFB53B;  
     }
     #main-picture{
         object-fit: contain;
