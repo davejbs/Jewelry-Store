@@ -77,8 +77,9 @@ h2{
 
 #footer{
     text-align: center;
+    color: #CFB53B;
 }
-
+/*Mobile responsive*/
 @media (max-width:1250px){
     .menu-flexbox{
         flex-direction: column;
@@ -91,6 +92,15 @@ h2{
     .liens{
      gap:2rem;
     }
+    h1{
+        font-size:1.5rem;
+    }
+    #valeurs-text{
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+        color: #CFB53B;
+        
+    }
 
     #main-picture{
         object-fit: contain;
@@ -100,6 +110,7 @@ h2{
     .cards{
         flex-direction: column;
         height: auto;
+        margin-left: 2.75rem;
     }
     .card{
     width: 90%;
@@ -110,21 +121,32 @@ h2{
 
     }
 
+
+
     .tile-image1{
         object-fit: contain;
-        width: 80%;
-        margin: auto;
+        width: 95%;
+
         height: auto;
         flex: none;
     }
     .tile-image2{
         object-fit: contain;
-        width: 80%;
-        margin: auto;
+        width: 95%;
+
         height: auto;
         flex: none;
     }    
 
+
+    .tile-text{
+        width: 20rem;
+    }
+    footer{
+        margin-left: 1.75rem;
+        width: 20rem;
+        color: #CFB53B;
+    }
 }
 
 
@@ -137,10 +159,4 @@ h2{
 
 
 
-
-footer{
-    clear:both;
-    margin-top: 5rem;
-    text-align: center;
-}
 
