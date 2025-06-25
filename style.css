@@ -4,60 +4,44 @@ html{
     font-weight: 900;
     font-style: normal;
 }
-
-
 .menu-flexbox{
     height: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
-
-
 #logo{
    border: solid black;
    border-radius: 50%;
     height: 6rem;
     margin-top: 3rem;
- 
-    
-
 }
-
 .liens{
     display: flex;
     gap:1rem;
 }
-
 h1{
     text-align: center;
 }
-
-h2{
+#valeurs-text{
     text-align: center;
     margin-bottom: -1rem;
     margin-top: 3rem;
+    color: #CFB53B;
 }
-
 #main-picture{
     height: 32rem;
     display: flex;
     margin: auto;
-
 }
 .cards{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
-
-.card{
-    
+.card{ 
     margin-top: 7rem;
     margin-bottom: 3rem;
-
 }
 .tile-image1{
     height: 20rem;    
@@ -74,7 +58,6 @@ h2{
 .tile-text{
     width: 45rem;
 }
-
 #footer{
     text-align: center;
     color: #CFB53B;
@@ -101,7 +84,6 @@ h2{
         color: #CFB53B;
         
     }
-
     #main-picture{
         object-fit: contain;
         width: 80%;
@@ -120,9 +102,6 @@ h2{
     text-align: center;
 
     }
-
-
-
     .tile-image1{
         object-fit: contain;
         width: 95%;
@@ -132,31 +111,17 @@ h2{
     }
     .tile-image2{
         object-fit: contain;
-        width: 95%;
+        width: 90%;
 
         height: auto;
         flex: none;
     }    
-
-
     .tile-text{
         width: 20rem;
     }
-    footer{
-        margin-left: 1.75rem;
+    #footer > p{
+        text-align: center;
         width: 20rem;
         color: #CFB53B;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
