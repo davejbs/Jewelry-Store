@@ -41,7 +41,7 @@ h2{
 }
 
 #main-picture{
-    height: 30rem;
+    height: 32rem;
     display: flex;
     margin: auto;
 
@@ -59,16 +59,19 @@ h2{
 
 }
 .tile-image1{
-    height: 40rem;    
+    height: 20rem;    
     float: left;
     padding: 1rem;
-    width: 30rem;   
+    width: 20rem;   
 }
 .tile-image2{
-    height: 40rem;    
+    height: 20rem;    
     float: left;
     padding: 1rem;
-    width: 35rem;   
+    width: 20rem;   
+}
+p{
+    width: 45rem;
 }
 
 @media (max-width:1250px){
