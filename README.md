@@ -1,1 +1,1 @@
-# skeleton-jewelry-responsive-test
+# Jewelry-Store
