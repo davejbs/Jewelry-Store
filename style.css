@@ -124,52 +124,63 @@ h1{
 }
 
 
+
+
 /* Page de la boutique*/
 
 
-#main-section{
+
+#main-section {
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
 
-#grid-container{
+
+#grid-container {
     display: grid;
-    height: 100vh;
+    height: auto;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12,1fr);
+    grid-template-rows: repeat(12, 1fr);
     margin-top: 5rem;
     gap: 15px;
-    border: 5px solid black;  
-    border-radius: 15px;
-}
-
-#shop-options{
     border: 5px solid black;
     border-radius: 15px;
-    /*Contenu*/
+    background-color: #f8f8f8;
+    padding: 1rem;
+}
+
+
+#shop-options {
+    border: 5px solid black;
+    border-radius: 15px;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     background-color: aliceblue;
     margin-top: 5rem;
-    
-    
+    height: 20rem;
+    padding: 1rem;
+    min-width: 250px;
 }
 
-#filtre{
+
+#filtre {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    
 }
+
 #filtre > a {
     color: #CFB53B;
-
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -180,12 +191,14 @@ h1{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    overflow: hidden; 
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
+
 
 .img-wrapper {
     width: 100%;
-    height: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 8px;
@@ -198,24 +211,68 @@ h1{
     object-fit: cover;
     display: block;
 }
-.item-infos{
-    margin-top: 0;
+
+
+.item-infos {
+    margin-top: 0.5rem;
     height: 3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
 }
 
-#montre1{grid-area: 1/1/4/4;}
-#montre2{grid-area: 1/4/4/7;}
-#montre3{grid-area: 1/7/4/10;}
-#montre4{grid-area: 1/10/4/13;}
-#ring1{grid-area: 4/1/7/4;}
-#ring2{grid-area: 4/4/7/7;}
-#ring3{grid-area: 4/7/7/10;}
-#ring4{grid-area: 4/10/7/13;}
-#chaine1{grid-area: 7/1/10/4;}
-#chaine2{grid-area: 7/4/10/7;}
-#chaine3{grid-area: 7/7/10/10;}
-#chaine4{grid-area: 7/10/10/13;}
-#necklace1{grid-area: 10/1/13/4;}
 
+#montre1 { grid-area: 1/1/4/4; }
+#montre2 { grid-area: 1/4/4/7; }
+#montre3 { grid-area: 1/7/4/10; }
+#montre4 { grid-area: 1/10/4/13; }
+
+#ring1 { grid-area: 4/1/7/4; }
+#ring2 { grid-area: 4/4/7/7; }
+#ring3 { grid-area: 4/7/7/10; }
+#ring4 { grid-area: 4/10/7/13; }
+
+#chaine1 { grid-area: 7/1/10/4; }
+#chaine2 { grid-area: 7/4/10/7; }
+#chaine3 { grid-area: 7/7/10/10; }
+#chaine4 { grid-area: 7/10/10/13; }
+
+#necklace1 { grid-area: 10/1/13/4; }
+
+
+
+@media (max-width: 768px) {
+    #main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #shop-options {
+        width: 90%;
+        gap: 1rem;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    #filtre {
+        gap: 1rem;
+    }
+
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #montre1, #montre2, #montre3, #montre4,
+    #ring1, #ring2, #ring3, #ring4,
+    #chaine1, #chaine2, #chaine3, #chaine4,
+    #necklace1 {
+        grid-area: unset;
+        width: 90%;
+        max-width: 400px;
+    }
+}
