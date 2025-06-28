@@ -122,3 +122,100 @@ h1{
         color: #CFB53B;
     }
 }
+
+
+/* Page de la boutique*/
+
+
+#main-section{
+    display: flex;
+    gap: 5px;
+}
+
+#grid-container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    margin-top: 5rem;
+    gap: 15px;
+    border: 5px solid black;  
+    border-radius: 15px;
+}
+
+#shop-options{
+    border: 5px solid black;
+    border-radius: 15px;
+    /*Contenu*/
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: aliceblue;
+    margin-top: 5rem;
+    
+    
+}
+
+#filtre{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+#filtre > a {
+    color: #CFB53B;
+
+}
+
+
+.item {
+    padding: 5px;
+    margin: 0.5rem;
+    border: solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.item-infos{
+    margin-top: 0;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#montre1{grid-area: 1/1/4/4;}
+#montre2{grid-area: 1/4/4/7;}
+#montre3{grid-area: 1/7/4/10;}
+#montre4{grid-area: 1/10/4/13;}
+#ring1{grid-area: 4/1/7/4;}
+#ring2{grid-area: 4/4/7/7;}
+#ring3{grid-area: 4/7/7/10;}
+#ring4{grid-area: 4/10/7/13;}
+#chaine1{grid-area: 7/1/10/4;}
+#chaine2{grid-area: 7/4/10/7;}
+#chaine3{grid-area: 7/7/10/10;}
+#chaine4{grid-area: 7/10/10/13;}
+#necklace1{grid-area: 10/1/13/4;}
+
